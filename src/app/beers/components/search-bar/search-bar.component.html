@@ -1,0 +1,14 @@
+<p>search-bar works!</p>
+
+<form [formGroup]="searchForm" (ngSubmit)="search()">
+
+    <input type="text" formControlName="beerName"
+    placeholder="Search beer by name">
+
+    <span *ngIf="notFound">
+        Beer not found. Please try again!
+    </span>
+
+    <button type="submit" [disabled]="searchForm.invalid">Search</button>
+
+</form>
