@@ -1,0 +1,44 @@
+.beer-view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+img {
+  height: 70vh;
+  margin: 0 auto;
+  padding: 3em;
+}
+
+.beer-info {
+  flex: 2;
+  height: 70vh;
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  padding: 3em;
+  font-family: var(--ff-secondary);
+}
+
+.section__title--beer-view,
+.section__subtitle--beer-view,
+.product-description {
+  margin-bottom: 25px;
+}
+
+.btn {
+  margin-left: 3%;
+}
+
+@media screen and (max-width: 600px){
+  .beer-view {
+    flex-direction: column;
+  }
+}
+

@@ -1,0 +1,36 @@
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8%;
+  padding-top: 2%;
+}
+
+.search-input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-search {
+  margin-left: 10px;
+  padding: 1em 2.5em;
+}
+
+.btn-search:hover {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+}
+
+span {
+  margin-top: 3px;
+  color: red;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+  .search-bar {
+    margin-left: 2%;
+    margin-bottom: 4%;
+  }
+}

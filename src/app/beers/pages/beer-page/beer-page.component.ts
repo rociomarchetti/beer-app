@@ -11,7 +11,7 @@ import { Beer } from '../../interfaces/beer.interface';
 })
 export class BeerPageComponent implements OnInit {
 
-  public beer?: Beer;
+  public beer!: Beer;
 
   constructor(
     private beerService: BeersService,
@@ -24,7 +24,7 @@ export class BeerPageComponent implements OnInit {
       .pipe(switchMap(({ id }) => this.beerService.getBeerById(id)))
       .subscribe( beer => {
         if(!beer) return this.router.navigate(['/beers/list']);
-        this.beer = beer;
+        this.beer = beer[0];
         console.log(beer)
         return
       });

@@ -1,0 +1,48 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 25%;
+  padding-top: 20px;
+}
+
+.section__title--intro {
+  font-weight: var(--fw-reg);
+  padding-left: 20px;
+}
+
+h1 {
+  color: var(--clr-light);
+}
+
+strong {
+  color: var(--clr-accent);
+}
+
+.section__subtitle--intro {
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  font-family: var(--ff-secondary);
+  padding: 0.25em 1em;
+  width: 50vw;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    margin-right: 0%;
+  }
+
+  h1 {
+    font-size: var(--fs-h2);
+  }
+
+  strong {
+    font-size: var(--fs-h1);
+  }
+
+  .section__subtitle--intro {
+    width: 100vw;
+    font-size: 1rem;
+  }
+}

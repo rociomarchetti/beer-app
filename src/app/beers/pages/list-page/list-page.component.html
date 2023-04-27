@@ -1,2 +1,19 @@
-<p>list-page works!</p>
 <app-search-bar></app-search-bar>
+
+<section>
+  <div class="beer-list-container">
+    <div class="beer-item" *ngFor="let beer of beers">
+      <img src="{{ beer.image_url }}" alt="" class="beer-image" />
+
+      <div class="beer-info">
+        <h3 class="beer-title">{{ beer.name }}</h3>
+        <div class="beer-description">
+          <p>{{ beer.tagline }}</p>
+          <button class="btn" [routerLink]="['/beers', beer.id]">
+            Learn more
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

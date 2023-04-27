@@ -1,1 +1,20 @@
-<p>beer-page works!</p>
+<div>
+  <button class="btn" [routerLink]="['/beers/list']">Back to list</button>
+</div>
+<div class="beer-view" *ngIf="beer !== undefined">
+  <div class="image-container">
+    <img src="{{ beer.image_url }}" alt="Product Image" />
+  </div>
+  <div class="beer-info">
+    <h2 class="section__title section__title--beer-view">{{ beer.name }}</h2>
+    <h3 class="section__subtitle section__subtitle--beer-view">{{ beer.tagline }}</h3>
+    <p class="product-description">{{ beer.description }}</p>
+    <h3>ABV: {{ beer.abv }}</h3>
+    <h4>Food pairing suggestions:</h4>
+    <ul>
+      <li *ngFor="let item of beer.food_pairing">
+        {{ item }}
+      </li>
+    </ul>
+  </div>
+</div>
