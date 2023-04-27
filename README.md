@@ -1,27 +1,60 @@
-# BeerApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.3.
+# Hoppy Hour 🍻🌟
 
-## Development server
+Whether you're a seasoned beer enthusiast or a newcomer to the world of craft brews, Hoppy Hour makes it easy to find the perfect beer for your next Beer Party. With its intuitive search feature, you can quickly find information on your favorite beers and discover new brews that are sure to impress.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## 🎯 How does it work?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+On the home page you will find a wide variety of beers. There in the list you can see a brief description of each beer, but you can also access more information via the "Learn more" button. It is also possible to search for a specific beer by entering its name in the search bar: if it exists, you will be redirected to the page with all the information related to it.
+### ⚙️ Brief description of the project
 
-## Build
+This is a SPA project developed in Angular that has two views, the list view and the one focused on the beer information ( excluding the page not found view). 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Two modules have been created, one for handling common components and one for all the management of the displayed content. The latter, the "beers.module" has a service to centralize the API calls, and it also works to centralize the child routes.
 
-## Running unit tests
+This project uses Punk API to get all the beers information. All the layout work was done with CSS. It has the ngx-infinite-scroll package for scroll management.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## 🔧Tech Stack
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![Angular](https://img.shields.io/badge/-Angular-C62828?style=flat-square&logo=angular)
 
-## Further help
+![TypeScript](https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=typescript)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+
+![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
+
+
+## Run Locally
+
+Prerequisites (versions used):
+
+Angular CLI: 15.2.6
+Node: 18.15.0
+Package Manager: npm 9.5.0
+OS: win32 x64
+
+Clone the project
+
+```bash
+  git clone https://github.com/rociomarchetti/beer-app.git
+```
+Install dependencies
+
+```bash
+  npm install
+```
+
+Serve the project
+
+```bash
+  ng serve
+```
+Open the project
+
+```bash
+  Open your browser and go to http://localhost:4200/
+```
+
