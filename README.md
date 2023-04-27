@@ -7,6 +7,7 @@ Whether you're a seasoned beer enthusiast or a newcomer to the world of craft br
 ## 🎯 How does it work?
 
 On the home page you will find a wide variety of beers. There in the list you can see a brief description of each beer, but you can also access more information via the "Learn more" button. It is also possible to search for a specific beer by entering its name in the search bar: if it exists, you will be redirected to the page with all the information related to it.
+
 ### ⚙️ Brief description of the project
 
 This is a SPA project developed in Angular that has two views, the list view and the one focused on the beer information ( excluding the page not found view). 
@@ -15,15 +16,11 @@ Two modules have been created, one for handling common components and one for al
 
 This project uses Punk API to get all the beers information. All the layout work was done with CSS. It has the ngx-infinite-scroll package for scroll management.
 
-
 ## 🔧Tech Stack
 
 ![Angular](https://img.shields.io/badge/-Angular-C62828?style=flat-square&logo=angular)
-
 ![TypeScript](https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=typescript)
-
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-
 ![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
 
 
