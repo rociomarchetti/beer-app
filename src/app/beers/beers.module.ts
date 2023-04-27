@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { InfiniteScrollModule } from "ngx-infinite-scroll";
 
 import { BeersRoutingModule } from './beers-routing.module';
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
@@ -19,7 +20,8 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
   imports: [
     CommonModule,
     BeersRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    InfiniteScrollModule
   ]
 })
 export class BeersModule { }

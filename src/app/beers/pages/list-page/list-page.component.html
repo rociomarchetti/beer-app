@@ -2,7 +2,12 @@
 
 <section>
   <div class="beer-list-container">
-    <div class="beer-item" *ngFor="let beer of beers">
+    <div class="beer-item" *ngFor="let beer of beers" 
+    ngxInfiniteScroll
+    infinite-scroll
+    [infiniteScrollDistance]="4"
+    [infiniteScrollThrottle]="2000"
+    (scrolled)="onScroll()">
       <img src="{{ beer.image_url }}" alt="" class="beer-image" />
 
       <div class="beer-info">

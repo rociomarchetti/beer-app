@@ -9,12 +9,19 @@ import { BeersService } from '../../services/beers.service';
 })
 export class ListPageComponent implements OnInit {
   public beers: Beer[] = [];
+  pageNumber: number = 1;
 
   constructor(private beerService: BeersService) {}
 
   ngOnInit(): void {
     this.beerService
-      .getBeerList()
+      .getBeerList(this.pageNumber)
       .subscribe((beerList) => (this.beers = beerList));
+  }
+
+  onScroll() {
+    this.beerService.getBeerList(this.pageNumber++).subscribe(resp => {
+      this.beers.push(...resp)
+    })
   }
 }
