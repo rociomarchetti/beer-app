@@ -3,12 +3,12 @@
 </div>
 <div class="beer-view" *ngIf="beer !== undefined">
   <div class="image-container">
-    <img src="{{ beer.image_url }}" alt="Product Image" />
+    <img src="{{ beer.image_url }}" class="text-flicker-in-glow"/>
   </div>
   <div class="beer-info">
     <h2 class="section__title section__title--beer-view">{{ beer.name }}</h2>
     <h3 class="section__subtitle section__subtitle--beer-view">{{ beer.tagline }}</h3>
-    <p class="product-description">{{ beer.description }}</p>
+    <p class="product-description slide-in-left">{{ beer.description }}</p>
     <h3>ABV: {{ beer.abv }}</h3>
     <h4>Food pairing suggestions:</h4>
     <ul>
