@@ -3,7 +3,7 @@
 
 Whether you're a seasoned beer enthusiast or a newcomer to the world of craft brews, Hoppy Hour makes it easy to find the perfect beer for your next Beer Party. With its intuitive search feature, you can quickly find information on your favorite beers and discover new brews that are sure to impress.
 
-Deploy link: https://hoppy-hour.netlify.app/beers/list
+Deploy link: https://hoppy-hour.netlify.app
 
 ![Hoppy Hour](https://user-images.githubusercontent.com/98389214/234912787-930e5c61-2b72-4f5e-b0e3-1be1c72de8ff.gif)
 
